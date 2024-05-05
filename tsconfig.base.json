@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "keinescheisse": ["keinescheisse/src/index.ts"],
+      "ohscheisse": ["ohscheisse/src/index.ts"],
+      "scheissetest": ["scheissetest/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

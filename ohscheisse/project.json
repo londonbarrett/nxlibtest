@@ -1,0 +1,29 @@
+{
+  "name": "ohscheisse",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ohscheisse/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/ohscheisse",
+        "tsConfig": "ohscheisse/tsconfig.lib.json",
+        "project": "ohscheisse/package.json",
+        "entryFile": "ohscheisse/src/index.ts",
+        "external": ["react", "react-dom", "@emotion/react/jsx-runtime"],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "ohscheisse/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}

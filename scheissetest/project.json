@@ -1,0 +1,9 @@
+{
+  "name": "scheissetest",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "scheissetest/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project scheissetest --web",
+  "targets": {}
+}
