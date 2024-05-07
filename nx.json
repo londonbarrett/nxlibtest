@@ -80,5 +80,9 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     }
+  },
+  "release": {
+    "projects": ["scheissetest", "ohscheisse", "keinescheisse"],
+    "projectsRelationship": "independent"
   }
 }
