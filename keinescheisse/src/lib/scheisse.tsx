@@ -5,5 +5,5 @@ export type ScheisseProps = {
 };
 
 export const Scheisse: FC<ScheisseProps> = memo(({ subject }) => (
-  <div>Scheisse {subject}!</div>
+  <div>Scheisseeeee! {subject}!</div>
 ));
